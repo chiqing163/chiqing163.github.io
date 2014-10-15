@@ -8999,7 +8999,7 @@ var onfinishGetHTML = function(data) {
     var iis = $(html).find('td.ii');
     var page_html = ['<p>'];
     iis.each(function(index, item) {
-      var add_target = (item.innerHTML || '').replace(/ alt/ig, ' target="_blank" alt');
+      var add_target = (item.innerHTML || '').replace(/<a/ig, '<a target="_blank"');
 
       page_html.push(add_target);
     });
