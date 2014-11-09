@@ -9018,3 +9018,6 @@ for (var i = start; i < end - start + 1; i++) {
         });
     }, 1000 * (i - start));
 }
+
+var visited = 'a:visited img { border: 10px solid red }';
+$('head').append('<style>' + visited + '</style');
