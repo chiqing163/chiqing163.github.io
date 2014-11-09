@@ -1,0 +1,13 @@
+{
+  "name": "Hello",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Says hello to Google",
+  "permissions": ["tabs", "*://*.e-hentai.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://lofi.e-hentai.org/g/*"],
+      "js": ["sublofi.js"]
+    }
+  ]
+}
