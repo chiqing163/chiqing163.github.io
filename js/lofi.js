@@ -8986,7 +8986,7 @@ $('#im').html('');
 $('#ir').remove();
 //var URL_PREFIX = 'http://lofi.e-hentai.org/?page=';
 var URL_PREFIX = document.location.href;
-if (URL_PREFIX === 'http://lofi.e-hentai.org/') {
+if (URL_PREFIX.indexOf('?') < 0 ) {
     URL_PREFIX += '?page=';
 } else {
     URL_PREFIX += '&page=';

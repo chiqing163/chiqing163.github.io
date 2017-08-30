@@ -89,7 +89,7 @@ t[h]}if(f.isEmptyObject(t)){var u=s.handle;u&&(u.elem=null),delete s.events,dele
 } (window));
 
 nop.add({
-    match: 'http://lofi.e-hentai.org/',
+    match: 'https://e-hentai.org/lofi',
     setting: {
         content: function(html, url) {
             try {
